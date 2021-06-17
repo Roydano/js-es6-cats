@@ -54,7 +54,7 @@ cats.forEach((elements) => {document.getElementById('milestone1').innerHTML +=
             Il gatto ${elements.nome} è di colore ${elements.colore}
         </li>
     </ul>
-    
+
  `
 });
 
@@ -66,6 +66,13 @@ cats.forEach((elements) => {document.getElementById('milestone1').innerHTML +=
 
 
 // Milestone 2 Dividere i gatti in due contenitori distinti in base al sesso e aggiungere a fianco di ogni gattino un fiocco colorato di rosa, se femmina, o di blu, se maschio. Il colore del fiocco deve essere più tenue se il gatto è più giovane, più scuro se il gatto è più vecchio.
+
+
+const maleCats = cats.filter((elements) => elements.genere === 'maschio');
+const femaleCats = cats.filter((elements) => elements.genere === 'femmina');
+
+
+console.log(maleCats, femaleCats);
 
 
 
